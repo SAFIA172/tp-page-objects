@@ -29,7 +29,7 @@ def test_page_object():
     confirmationPage = ConfirmationtPage(driver)
     confirmationPage.openCart()
     cartPage = CartPage(driver)
-    cartPage.changeQuantity()
+    cartPage.changeQuantity("2")
     cartPage.getQuantity()
 
     assert quantite == cartPage.getQuantity(), "la quantite_saisie et la quantite  de la selection sont differents"

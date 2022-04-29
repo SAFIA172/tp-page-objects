@@ -15,6 +15,7 @@ class HomePage:
 
 
 
+
     def __init__(self, driver: webdriver.chrome):
         self.driver = driver
 
@@ -36,3 +37,6 @@ class HomePage:
 
     def openAllBooks(self):
         self.driver.find_element(By.CSS_SELECTOR, self.tous_les_livres).click()
+
+
+
